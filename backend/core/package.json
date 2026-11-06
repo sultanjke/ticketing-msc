@@ -1,10 +1,10 @@
 {
-  "name": "@msv-ticket/core",
-  "version": "1.0.0",
+  "name": "@ticketing-msc/core",
+  "version": "1.0.1",
   "description": "Core utils and shared setup",
   "type": "commonjs",
   "publishConfig": {
-    "access": "public" 
+    "access": "public"
   },
   "license": "ISC",
   "author": {
