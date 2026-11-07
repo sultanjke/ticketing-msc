@@ -10,6 +10,7 @@ export default {
 	importOrderSeparation: true,
 	importOrderSortSpecifiers: true,
 	importOrderCaseInsensitive: true,
+	importOrderParserPlugins: ['typescript', 'decorators-legacy'],
 	importOrder: ['<THIRD_PARTY_MODULES>', '^@/(.*)$', '^../(.*)', '^./(.*)'],
 	plugins: [
 		'@trivago/prettier-plugin-sort-imports',
