@@ -4,10 +4,16 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'backend/core/**'
+      - '.github/workflows/core.yml'
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend/core
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -15,5 +21,5 @@ jobs:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
       - run: npm publish
-        env: 
+        env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
