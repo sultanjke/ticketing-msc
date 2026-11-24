@@ -1,0 +1,23 @@
+{
+  "name": "@ticketing-msc/common",
+  "version": "1.0.0",
+  "description": "Core shared components for ticket sales service with microservices ecosystem",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "@ticketing-msc/core": "^1.0.7",
+    "@types/node": "^26.6.6",
+    "prettier": "^3.10.1",
+    "typescript": "^7.0.2"
+  }
+}
